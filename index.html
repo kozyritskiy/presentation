@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown data-background-color="black">
+					<textarea data-template>
+						<iframe height='400' scrolling='no' title='mQGEKa' src='https://codepen.io/kozyritskiy/embed/mQGEKa/?height=300&theme-id=35260&default-tab=result'
+						 frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+							<a href='https://codepen.io/kozyritskiy/pen/mQGEKa/'>mQGEKa</a> by Max (
+							<a href='https://codepen.io/kozyritskiy'>@kozyritskiy</a>) on
+							<a href='https://codepen.io'>CodePen</a>.
+						</iframe>
+						<p style="font-size: 70px">Green<span style="color: #88ce02"><b>Sock</b></span></p>
+					</textarea>
+				</section>
+				<section>
+					<section data-markdown data-background-color="black" >
+						<textarea data-template>
+							<div>The GreenSock Animation Platform (GSAP) animates anything JavaScript can touch (CSS properties, SVG, React, canvas, generic
+							objects, whatever) and solves countless browser inconsistencies, all with blazing speed</div>
+							<div>
+								<img src="./test/examples/assets/club.jpg" height="300" width="800" style="border: none">
+							</div>
+						</textarea>
+					</section>
+					<section data-markdown data-background-color="black">
+						<textarea data-template>
+							<div><img src="./test/examples/assets/jack.jpg" height="200" width="200" style="border-radius: 50%" ></div>
+							<div style="font-size: 65px"><b>Jack Doyle</b> </div> 
+							<div>Founder and Author of GSAP</div>	
+						</textarea>
+					</section>
+		
+				</section>
+				<section data-markdown data-background-color="black">
+					<textarea data-template>
+						<span style="font-size: 75px">What is <span style="color: #88ce02">GSAP</span>?</span> 
+				
+						<ul style="font-size: 30px">
+							<li class="fragment" data-fragment-index="1">Most robust high-performance javascript animation library on the planet</li>
+							<li class="fragment" data-fragment-index="2">No dependencies (other libs or rendering layer)</li>
+							<li class="fragment" data-fragment-index="3">Used on over 4 million sites</li>
+							<li class="fragment" data-fragment-index="4">Used by top brands:</li>
+							<div class="fragment" data-fragment-index="4"><img src="./test/examples/assets/GSAP.png" height="300" width="900" style="border: 2px solid #88ce02"></div>
+							
+						</ul>
+					</textarea>
+				</section>
+				<section data-markdown data-background-color="black">
+					<textarea data-template>
+						<span style="font-size: 75px">Why <span style="color: #88ce02">GSAP</span>?</span> 
+				 
+						<ul style="font-size: 50px">
+							<li class="fragment" data-fragment-index="1">Crazy fast</li>
+							<li class="fragment" data-fragment-index="2">Animate anything</li>
+							<li class="fragment" data-fragment-index="3">Compatible</li>
+							<li class="fragment" data-fragment-index="4">Easy workflow, refined tools, total control</li>
+							<li class="fragment" data-fragment-index="5">Fast load times</li>
+						</ul>
+					</textarea>
+				</section>
+				<section data-markdown data-background-color="black">
+					<textarea data-template>
+						<span style="font-size: 75px">Tools of <span style="color: #88ce02">GSAP</span></span> 
+						<ul style="font-size: 35px">
+							<li class="fragment" data-fragment-index="1"><a href="https://greensock.com/tweenlite">TweenLite</a></li>
+							<li class="fragment" data-fragment-index="2"><a href="https://greensock.com/tweenmax">TweenMax</a></li>
+							<li class="fragment" data-fragment-index="3"><a href="https://greensock.com/timelinelite">TimelineLite</a></li>
+							<li class="fragment" data-fragment-index="4"><a href="https://greensock.com/timelinemax">TimelineMax</a></li>
+							<li class="fragment" data-fragment-index="5"><a href="https://greensock.com/plugins/">Plugins</a>: css, bezier, attr, directionalRotation, etc.</li>
+							<li class="fragment" data-fragment-index="6"><a href="https://greensock.com/ease-visualizer">Eases</a>: Elastic, Bounce, Rough, Stepped, SlowMo, etc.</li>
+							<li class="fragment" data-fragment-index="7"><a href="https://greensock.com/club">Bonus</a>: SplitText, MorphSVG, DrawSVG, ThrowProps, ScrambleText and more!</li>
+						</ul>
+					</textarea>
+				</section>
+				<section data-markdown data-background-color="black">
+					<textarea data-template>
+						<span style="font-size: 65px">Basic Sequencing</span> 
+						<pre><code data-trim data-noescape style="font-size: 15px">
+						 var tl = new TimelineMax({repeat:30, repeatDelay:1}); 
+						 //add 3 tweens that will play in direct succession. 
+						 tl.to(".green", 1, {x:200}); 
+						 tl.to(".orange", 1, {x:200, scale:0.2}); 
+						 tl.to(".grey", 1, {x:200, scale:2, y:20});
+							</code></pre>
+						<iframe height='279' scrolling='no' title='Timeline: Basic Sequence;' src='https://codepen.io/GreenSock/embed/MGpmdv/?height=279&theme-id=dark&default-tab=result'
+						 frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+							<a href='https://codepen.io/GreenSock/pen/MGpmdv/'>Timeline: Basic Sequence;</a> by GreenSock (
+							<a href='https://codepen.io/GreenSock'>@GreenSock</a>) on
+							<a href='https://codepen.io'>CodePen</a>.
+						</iframe>
+					</textarea>
+				</section>
+				<section data-markdown data-background-color="black">
+					<textarea data-template>
+						<span style="font-size: 45px">Morphing 3D Cylinder</span>
+						<iframe height='450px' scrolling='no' title='Morphing 3D Cylinder' src='https://codepen.io/chrisgannon/embed/CnjpE/?height=265&theme-id=dark&default-tab=result'
+						 frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 600px;'>See the Pen
+							<a href='https://codepen.io/chrisgannon/pen/CnjpE/'>Morphing 3D Cylinder</a> by Chris Gannon (
+							<a href='https://codepen.io/chrisgannon'>@chrisgannon</a>) on
+							<a href='https://codepen.io'>CodePen</a>.
+						</iframe>
+						<div style="font-size: 45px">by Chris Gannon</div>
+					</textarea>
+				</section>
+				<section data-markdown data-background-color="black">
+					<textarea data-template>
+						<b> <span style="font-size: 75px">Core Strengths of <span style="color: #88ce02">GSAP</span></span> </b>
+						<ul style="font-size: 50px">
+							<li class="fragment" data-fragment-index="1">Super fast</li>
+							<li class="fragment" data-fragment-index="2">Plugin architecture</li>
+							<li class="fragment" data-fragment-index="3">Support and documentation</li>
+							<li class="fragment" data-fragment-index="4">It "just works"...everywhere!</li>
+						</ul>
+					</textarea>
+				</section>
+				<section data-markdown data-background-color="black">
+					<textarea data-template>
+						<h2 style="color: #88ce02">Thanks</h2>
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				markdown: {
+					smartypants: true
+				},
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
